@@ -12,6 +12,11 @@ defmodule Handjob.Application do
         # Children for all targets
         # Starts a worker by calling: Handjob.Worker.start_link(arg)
         # {Handjob.Worker, arg},
+       {Phoenix.PubSub, name: Handjob.PubSub},
+        # Start the Endpoint (http/https)
+        HandjobWeb.Endpoint
+        # Start a worker by calling: Handjob.Worker.start_link(arg)
+        # {Handjob.Worker, arg}
       ] ++ target_children()
 
     # See https://hexdocs.pm/elixir/Supervisor.html
