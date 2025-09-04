@@ -1,5 +1,10 @@
 import Config
 
+config :handjob, HandjobWeb.Endpoint,
+  # Code Reloader and watchers cannot be used on target
+  code_reloader: false,
+  watchers: []
+
 # Use Ringlogger as the logger backend and remove :console.
 # See https://hexdocs.pm/ring_logger/readme.html for more information on
 # configuring ring_logger.
@@ -73,11 +78,6 @@ config :mdns_lite,
   services: [
     %{
       protocol: "ssh",
-      transport: "tcp",
-      port: 22
-    },
-    %{
-      protocol: "sftp-ssh",
       transport: "tcp",
       port: 22
     },
