@@ -20,7 +20,6 @@ config :handjob, HandjobWeb.Endpoint,
   ],
   pubsub_server: Handjob.PubSub
 
-
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 

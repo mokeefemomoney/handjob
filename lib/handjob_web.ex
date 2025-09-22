@@ -36,7 +36,7 @@ defmodule HandjobWeb do
   def controller do
     quote do
       use Phoenix.Controller,
-        formats: [:json],
+        formats: [:json]
 
       import Plug.Conn
 
@@ -44,13 +44,12 @@ defmodule HandjobWeb do
     end
   end
 
-
   def verified_routes do
     quote do
       use Phoenix.VerifiedRoutes,
         endpoint: HandjobWeb.Endpoint,
         router: HandjobWeb.Router
-	end
+    end
   end
 
   @doc """

@@ -2,10 +2,12 @@ defmodule HandjobWeb.Router do
   use HandjobWeb, :router
 
   pipeline :api do
-    plug :accepts, ["json"]
+    plug(:accepts, ["json"])
   end
 
   scope "/", HandjobWeb do
-    pipe_through :api
+    pipe_through(:api)
+
+    post "/", FingerController, :bang
   end
 end

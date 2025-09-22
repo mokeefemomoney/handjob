@@ -13,7 +13,7 @@ config :handjob, HandjobWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "sODMOCqDOBh6ykWCXcIW3Y19hDlM4b8Y99/ExyZPE6OeBEc7z+3FgbXlM/kqW2Vm",
+  secret_key_base: "sODMOCqDOBh6ykWCXcIW3Y19hDlM4b8Y99/ExyZPE6OeBEc7z+3FgbXlM/kqW2Vm"
 
 # ## SSL Support
 #
