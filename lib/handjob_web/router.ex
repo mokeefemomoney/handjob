@@ -8,6 +8,6 @@ defmodule HandjobWeb.Router do
   scope "/", HandjobWeb do
     pipe_through(:api)
 
-    post "/", FingerController, :bang
+    post("/", FingerController, :bang)
   end
 end
